@@ -19,7 +19,10 @@ you're working on.
 - Assert on behavior/output, not implementation details (internal state, private methods)
 
 ## Fixture Usage
-- Use factory functions for test data, not inline literals repeated across tests
+- This repo has no shared fixture/factory layer yet (see `.claude/CLAUDE.md` ->
+  CI-Invoked Review & Test Generation). Until one exists, build test data inline —
+  a small local helper function in the same test file is fine if a literal repeats
+  more than twice, but don't import from or invent a shared fixtures module.
 - Mock external services (APIs, DB, filesystem) at the module boundary, not deep inside
   business logic
 - Reset/teardown fixtures between tests — no shared mutable state across test cases

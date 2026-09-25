@@ -5,7 +5,7 @@ paths: [".github/workflows/**"]
 # CI Workflow Conventions
 
 Applies when editing this repo's GitHub Actions workflows. Captures the patterns
-already established in `claude-review.yml` so future changes stay consistent.
+already established in `claude-ci.yml` so future changes stay consistent.
 
 ## Session isolation
 Generation and review run as separate jobs on separate triggers
